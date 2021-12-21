@@ -174,8 +174,8 @@ public class NetworkedServer : MonoBehaviour
             // if there is no player waiting, save the waiting player in the above variable
             if (playerWaitingForMatch == -1)
             {
-            // make a single int variable to represent the one and only possible waiting player
-            playerWaitingForMatch = id;
+                playerWaitingForMatch = id;
+                // make a single int variable to represent the one and only possible waiting player
             }
 
             // SECOND PLAYER JOIN    
@@ -214,8 +214,22 @@ public class NetworkedServer : MonoBehaviour
             else
                 SendMessageToClient(ServerToClientSignifiers.OpponentTicTacToePlay + "", gs.playerID1);
         }
-        //public const int AddToGameSession = 3;
-        //public const int TicTacToePlay = 4;
+
+
+        //else if (signifier == ClientToServerSignifiers.TicTacToePlay)
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
 
